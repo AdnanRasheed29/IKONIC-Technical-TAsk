@@ -1,0 +1,564 @@
+
+.flex-row{
+    display: flex ;
+}
+.flex-col{
+    justify-content: center;
+    flex-direction: column;
+}
+.aligncenter{
+    align-items: center;
+}
+.col-10{
+    width: 10%;
+}
+.col-20{
+width: 20%;
+}
+.col-25{
+    width: 25%;
+}
+.col-30{
+    width: 30%;;
+}
+.col-40{
+    width: 40%;
+    }
+.col-50{
+        width: 50%;
+    }
+    .col-60{
+        width: 60%;
+}    
+.col-70{
+    width: 70%;
+    }
+    .col-80{
+        width: 80%;
+        }
+  /* logo text */
+  .logotexttop{
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color:var(--graycolor) ;
+    margin:0px;
+}
+.logolower{
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: capitalize;
+    color:  var(--graycolor) ;
+    margin:0px;
+}
+
+
+.colgap{
+    column-gap: 10px !important;
+}
+.blockcol{
+    display: block !important;
+}
+.logo-img{
+    height: 18px !important;
+}
+.navbar{
+    align-items: center;
+    margin:32px 0px;
+    padding-left: 5% !important;
+}
+.nav{
+    align-items: center !important;
+}
+.nav a{
+    color: var(--graycolor);
+    margin:0px 20px  !important;
+    text-decoration: none !important;
+}
+.section1 {
+   
+    position: relative; /* Enables positioning of the overlay */
+    height: 480px !important;
+    background-image: url('img1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #4F514FF2 0%, #4F514F80 57%, #4F514F00 78%, #4F514F00 100%);
+    z-index: 1; /* Puts the overlay above the image */
+}
+
+.section1 > * {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the gradient overlay */
+    padding: 0px 16%;
+}
+.section1 p{
+    font-size: 30px ;
+    line-height: 35px;
+    color: var(--whitecolor);
+    font-weight: 200;
+    margin: 0px ;
+}
+
+/* section 1end */
+.section2{
+    padding: 90px 220px;
+
+}
+.section2 p{
+    color: var(--litegray);
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.box{
+    /* UI Properties */
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #0000004D;
+border-radius: 5px;
+opacity: 1;
+padding: 16px;
+align-items: center;
+
+}
+.icon,.icon1,.icon2 {
+    width: 50px; /* Adjust as needed */
+    height: 50px;
+    color:var(--blue); /* Default color */
+    transition: color 0.3s ease;
+}
+
+.box:hover {
+  background-color: var(--blue);
+}
+
+.box p{
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--litegray);
+}
+
+.box:hover p,.box:hover .icon{
+    color:var(--whitecolor); /* Changes color to white on hover */
+
+}
+/* Section 3 start */
+.jointimg{
+    width: 50%;
+}
+
+.footertop, .section3{
+    background-color: var(--litewhite);
+    padding: 90px 220px !important;
+}
+
+
+/* section 3 end */
+.section4
+{
+    /* UI Properties */
+background: transparent linear-gradient(90deg, var(--blue) 0%, var(--liteblue) 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(90deg, var(--blue) 0%, var(--liteblue) 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+padding: 90px 220px;
+}
+.section4 h2{
+    color: var(--whitecolor)  !important;
+    margin-bottom: 30px !important;
+   
+
+}
+.video, .video2 {
+   
+    position: relative; /* Enables positioning of the overlay */
+    background-image: url('room.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 700px;
+    height: 350px;
+}
+
+.video2::before,.video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.8;
+    z-index: 1; /* Puts the overlay above the image */
+}
+
+.video2>*,.video > * {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the gradient overlay */
+}
+
+.icon1 {
+    width: 50px  !important; /* Adjust as needed */
+    height: 50px;
+    color:var(--litegray); /* Default color */
+    transition: color 0.3s ease;
+}
+.icon1:hover {
+   
+    background-color:var(--litegray); /* Default color */
+    color: var(--whitecolor);
+    border-radius: 50px ;
+}
+
+/* section 4 end */
+.faqsec,.section5{
+    padding: 90px 220px;
+}
+ .video2,.video {
+    margin-top: 30px !important;
+   
+    position: relative; /* Enables positioning of the overlay */
+    background-image: url('office.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 698px;
+    height: 390px;
+}
+.icon2 {
+    color:var(--blue) !important; /* Default color */
+
+}
+.icon2:hover {
+   
+    background-color:var(--blue) !important; /* Default color */
+    color: var(--whitecolor) !important;
+    border-radius: 50px ;
+}
+ .video2 {
+    width: 200px;
+    height: 100px !important;
+    border-radius: 5px !important;
+}
+.section6{
+    background-color: var(--litewhite);
+    padding: 90px 220px;
+
+}
+
+.section6 .boxes{
+    flex-wrap: wrap !important;
+    row-gap: 20px !important;
+    column-gap: 20px;
+    justify-content: center;
+}
+.section6 .box{
+    width: 45%  !important;
+    height: 171px;
+}
+
+.accordion {
+    margin-top: 20px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    font-size: 18px;
+}
+
+.accordion-content {
+    font-size: 15px;
+    line-height: 20px;
+    color:var(--litegray) ;
+    display: none;
+    padding: 35px;
+    background-color:var(--litewhite);
+    margin-bottom: 10px  !important;
+}
+.button{
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 50px;
+}
+.button a{
+    font-size: 18px;
+    color: var(--whitecolor);
+    background-color: var(--blue);
+    line-height: 38px;
+    width: 238px;
+    text-align: center;
+    text-decoration:none;
+}
+ .button a:hover{
+    background-color: #4D8ED3;
+}
+.buttons a{
+    display: block;
+    width: 100%;
+    color: var(--graycolor);
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footertop{
+column-gap: 50px;
+}
+footer .logo-img{
+    height: 50px  !important;
+}
+footer .logolower{
+    font-size: 18px;
+}
+footer .logotexttop{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+
+.footertext{
+    color: var(--litegray);
+}
+
+.lighttext{
+    font-weight: 300  !important;
+}
+
+.social-icons img{
+    padding: 10px !important;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+.social-icons img:hover{
+    background-color: var(--liteblue);
+}
+.footerbototm{
+    color: var(--whitecolor);
+    background-color: var(--graycolor);
+    padding: 15px 220px;
+    justify-content: space-between;
+}
+  
+
+:root {
+
+
+    body{
+        margin: 0px !important;
+    }
+    h1{
+        color: var(--whitecolor);
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 400;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    h2{
+        color: var(--graycolor);
+        font-size: 40px;
+        margin: 0px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 35px;
+        color: var(--whitecolor);
+        background-color: #326295;
+        margin: 0px;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .center{
+        text-align: center;
+    }
+
+
+
+
+    /* Colors: */
+    --graycolor: #4F514F;
+    --whitecolor:#ffffff;
+    --litegray:#54585a;
+    --blue:#326295;
+    --litewhite:#f2f2f2;
+    --liteblue: #4D8ED3;
+
+    /* Font/text values */
+    --unnamed-font-family-catamaran: Catamaran !important;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-12: 12px;
+    --unnamed-font-size-13: 13px;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-15: 15px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-60: 60px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-15: 15px;
+    --unnamed-line-spacing-19: 19px;
+    --unnamed-line-spacing-20: 20px;
+    --unnamed-line-spacing-21: 21px;
+    --unnamed-line-spacing-23: 23px;
+    --unnamed-line-spacing-25: 25px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-line-spacing-45: 45px;
+    --unnamed-line-spacing-49: 49px;
+    --unnamed-line-spacing-55: 55px;
+    --unnamed-line-spacing-65: 65px;
+    }
+  
+
+
+
+    /* Character Styles */
+    .unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-45);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-19);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-3 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-20);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-4 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-20);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-5 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-15);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
+    .unnamed-character-style-6 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-23);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
+    .unnamed-character-style-7 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-13);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-8 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-15);
+    line-height: var(--unnamed-line-spacing-20);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
+    .unnamed-character-style-9 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-55);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
+    .unnamed-character-style-10 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-13);
+    line-height: var(--unnamed-line-spacing-21);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
+    .unnamed-character-style-11 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-25);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
+    .unnamed-character-style-12 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-49);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-13 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-60);
+    line-height: var(--unnamed-line-spacing-65);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .unnamed-character-style-14 {
+    font-family: var(--unnamed-font-family-catamaran);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-54585a);
+    }
